@@ -1,4 +1,5 @@
 import React from 'react';
+import {Icon} from 'react-native-elements';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -8,6 +9,15 @@ const Stack = createStackNavigator();
 
 const headerStyle = {
   headerShown: true,
+  headerRight: () => (
+    <Icon
+      containerStyle={{marginRight: 18}}
+      type="ionicon"
+      name="cart-outline"
+      color="white"
+      onPress={() => alert('ola')}
+    />
+  ),
   headerBackTitleVisible: false,
   headerTintColor: 'black',
   headerStyle: {

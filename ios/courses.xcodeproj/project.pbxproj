@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* coursesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* coursesTests.m */; };
+		072A167AFBD64D479A30C41B /* HelveticaNeueMed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD6B6A7E32D34F9A93E1918E /* HelveticaNeueMed.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -15,22 +16,21 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* coursesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* coursesTests.m */; };
+		3F417C6BF9F64EB88A2F6C0D /* HelveticaNeue BlackCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88136FE3649B4110B5B4B7EE /* HelveticaNeue BlackCond.ttf */; };
+		41C2DC76644C4467B91C836C /* HelveticaNeueHv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C917AB8E7B4684A39AF50F /* HelveticaNeueHv.ttf */; };
+		638E0690654D434EAD939E65 /* HelveticaNeue Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09CF38D52DD04DA1AAB03A30 /* HelveticaNeue Thin.ttf */; };
 		723456CB2934180160E206AF /* libPods-courses-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9A2A66D58B4BFA9C23F2C2 /* libPods-courses-tvOS.a */; };
 		7967784BDABA93F631BDEDC3 /* libPods-courses-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4875FCB53BEB3DF8D56A76B /* libPods-courses-tvOSTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		859891930C55E4EAB9CBDBA2 /* libPods-courses.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0202CAEBFFBE1D1F864FB002 /* libPods-courses.a */; };
-		A964D48D5E2D7DAADE17077A /* libPods-courses-coursesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2837306933D5E4979FF97271 /* libPods-courses-coursesTests.a */; };
 		7F2FD8E1186B4F6295F37E15 /* Helvetica Neu Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD67E9E4649A4443BDBEC249 /* Helvetica Neu Bold.ttf */; };
-		3F417C6BF9F64EB88A2F6C0D /* HelveticaNeue BlackCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88136FE3649B4110B5B4B7EE /* HelveticaNeue BlackCond.ttf */; };
-		8DC9FE084FA44EBD8A03584B /* HelveticaNeue Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0946CD35B24B868928448A /* HelveticaNeue Light.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		83043329965744638FDCFD8F /* HelveticaNeue Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E78727C616B041EA9176EDA0 /* HelveticaNeue Medium.ttf */; };
-		638E0690654D434EAD939E65 /* HelveticaNeue Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09CF38D52DD04DA1AAB03A30 /* HelveticaNeue Thin.ttf */; };
+		859891930C55E4EAB9CBDBA2 /* libPods-courses.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0202CAEBFFBE1D1F864FB002 /* libPods-courses.a */; };
+		8DC9FE084FA44EBD8A03584B /* HelveticaNeue Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0946CD35B24B868928448A /* HelveticaNeue Light.ttf */; };
+		A86FEDDA9DB6496698E83A24 /* HelveticaNeueLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE7DD7D0F314158952D31E6 /* HelveticaNeueLt.ttf */; };
+		A964D48D5E2D7DAADE17077A /* libPods-courses-coursesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2837306933D5E4979FF97271 /* libPods-courses-coursesTests.a */; };
+		B85C88633BE3419186D172CD /* HelveticaNeueIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05F0AC1BDED9402E88D85882 /* HelveticaNeueIt.ttf */; };
 		D0C08AC335144B60B25D394A /* HelveticaNeue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80C87656AAFF4F9AB7D00D14 /* HelveticaNeue.ttf */; };
 		DE73AE1242E44D4B9F806096 /* HelveticaNeueBd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A202F2A780B64574802D221F /* HelveticaNeueBd.ttf */; };
-		41C2DC76644C4467B91C836C /* HelveticaNeueHv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7C917AB8E7B4684A39AF50F /* HelveticaNeueHv.ttf */; };
-		B85C88633BE3419186D172CD /* HelveticaNeueIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05F0AC1BDED9402E88D85882 /* HelveticaNeueIt.ttf */; };
-		A86FEDDA9DB6496698E83A24 /* HelveticaNeueLt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDE7DD7D0F314158952D31E6 /* HelveticaNeueLt.ttf */; };
-		072A167AFBD64D479A30C41B /* HelveticaNeueMed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD6B6A7E32D34F9A93E1918E /* HelveticaNeueMed.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +56,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* coursesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coursesTests.m; sourceTree = "<group>"; };
 		0202CAEBFFBE1D1F864FB002 /* libPods-courses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-courses.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F0AC1BDED9402E88D85882 /* HelveticaNeueIt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeueIt.ttf; path = ../assets/fonts/HelveticaNeueIt.ttf; sourceTree = "<group>"; };
+		09CF38D52DD04DA1AAB03A30 /* HelveticaNeue Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue Thin.ttf"; path = "../assets/fonts/HelveticaNeue Thin.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* courses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = courses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = courses/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = courses/AppDelegate.m; sourceTree = "<group>"; };
@@ -65,30 +67,28 @@
 		16B4A8CC5EF308A4C071F635 /* Pods-courses-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-courses-tvOSTests/Pods-courses-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CE404A8B8924686CA8933B2 /* Pods-courses-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-courses-tvOS/Pods-courses-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		2837306933D5E4979FF97271 /* libPods-courses-coursesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-courses-coursesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0946CD35B24B868928448A /* HelveticaNeue Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue Light.ttf"; path = "../assets/fonts/HelveticaNeue Light.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* courses-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "courses-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* courses-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "courses-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFC1F26C13FED4D8B7F7333 /* Pods-courses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses.debug.xcconfig"; path = "Target Support Files/Pods-courses/Pods-courses.debug.xcconfig"; sourceTree = "<group>"; };
 		7F9257254F42262E18D777E7 /* Pods-courses-coursesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-coursesTests.debug.xcconfig"; path = "Target Support Files/Pods-courses-coursesTests/Pods-courses-coursesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80C0375279726ED596059CC9 /* Pods-courses-coursesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-coursesTests.release.xcconfig"; path = "Target Support Files/Pods-courses-coursesTests/Pods-courses-coursesTests.release.xcconfig"; sourceTree = "<group>"; };
+		80C87656AAFF4F9AB7D00D14 /* HelveticaNeue.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeue.ttf; path = ../assets/fonts/HelveticaNeue.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = courses/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88136FE3649B4110B5B4B7EE /* HelveticaNeue BlackCond.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue BlackCond.ttf"; path = "../assets/fonts/HelveticaNeue BlackCond.ttf"; sourceTree = "<group>"; };
 		8C5C27252A793E9099BD89D3 /* Pods-courses-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-courses-tvOSTests/Pods-courses-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		91C4BE764EB8FCD56540B377 /* Pods-courses-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses-tvOS.release.xcconfig"; path = "Target Support Files/Pods-courses-tvOS/Pods-courses-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		A202F2A780B64574802D221F /* HelveticaNeueBd.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeueBd.ttf; path = ../assets/fonts/HelveticaNeueBd.ttf; sourceTree = "<group>"; };
+		AD67E9E4649A4443BDBEC249 /* Helvetica Neu Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Helvetica Neu Bold.ttf"; path = "../assets/fonts/Helvetica Neu Bold.ttf"; sourceTree = "<group>"; };
+		BD6B6A7E32D34F9A93E1918E /* HelveticaNeueMed.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeueMed.ttf; path = ../assets/fonts/HelveticaNeueMed.ttf; sourceTree = "<group>"; };
+		BDE7DD7D0F314158952D31E6 /* HelveticaNeueLt.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeueLt.ttf; path = ../assets/fonts/HelveticaNeueLt.ttf; sourceTree = "<group>"; };
 		C4875FCB53BEB3DF8D56A76B /* libPods-courses-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-courses-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9A2A66D58B4BFA9C23F2C2 /* libPods-courses-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-courses-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58C2B18F3E836032FC0837E /* Pods-courses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-courses.release.xcconfig"; path = "Target Support Files/Pods-courses/Pods-courses.release.xcconfig"; sourceTree = "<group>"; };
+		E78727C616B041EA9176EDA0 /* HelveticaNeue Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HelveticaNeue Medium.ttf"; path = "../assets/fonts/HelveticaNeue Medium.ttf"; sourceTree = "<group>"; };
+		E7C917AB8E7B4684A39AF50F /* HelveticaNeueHv.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = HelveticaNeueHv.ttf; path = ../assets/fonts/HelveticaNeueHv.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		AD67E9E4649A4443BDBEC249 /* Helvetica Neu Bold.ttf */ = {isa = PBXFileReference; name = "Helvetica Neu Bold.ttf"; path = "../assets/fonts/Helvetica Neu Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		88136FE3649B4110B5B4B7EE /* HelveticaNeue BlackCond.ttf */ = {isa = PBXFileReference; name = "HelveticaNeue BlackCond.ttf"; path = "../assets/fonts/HelveticaNeue BlackCond.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2C0946CD35B24B868928448A /* HelveticaNeue Light.ttf */ = {isa = PBXFileReference; name = "HelveticaNeue Light.ttf"; path = "../assets/fonts/HelveticaNeue Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E78727C616B041EA9176EDA0 /* HelveticaNeue Medium.ttf */ = {isa = PBXFileReference; name = "HelveticaNeue Medium.ttf"; path = "../assets/fonts/HelveticaNeue Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		09CF38D52DD04DA1AAB03A30 /* HelveticaNeue Thin.ttf */ = {isa = PBXFileReference; name = "HelveticaNeue Thin.ttf"; path = "../assets/fonts/HelveticaNeue Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		80C87656AAFF4F9AB7D00D14 /* HelveticaNeue.ttf */ = {isa = PBXFileReference; name = "HelveticaNeue.ttf"; path = "../assets/fonts/HelveticaNeue.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A202F2A780B64574802D221F /* HelveticaNeueBd.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueBd.ttf"; path = "../assets/fonts/HelveticaNeueBd.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E7C917AB8E7B4684A39AF50F /* HelveticaNeueHv.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueHv.ttf"; path = "../assets/fonts/HelveticaNeueHv.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		05F0AC1BDED9402E88D85882 /* HelveticaNeueIt.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueIt.ttf"; path = "../assets/fonts/HelveticaNeueIt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BDE7DD7D0F314158952D31E6 /* HelveticaNeueLt.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueLt.ttf"; path = "../assets/fonts/HelveticaNeueLt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BD6B6A7E32D34F9A93E1918E /* HelveticaNeueMed.ttf */ = {isa = PBXFileReference; name = "HelveticaNeueMed.ttf"; path = "../assets/fonts/HelveticaNeueMed.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +221,7 @@
 			sourceTree = "<group>";
 		};
 		9DF9A3FC1A67416A943441EF /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				AD67E9E4649A4443BDBEC249 /* Helvetica Neu Bold.ttf */,
 				88136FE3649B4110B5B4B7EE /* HelveticaNeue BlackCond.ttf */,
@@ -237,7 +237,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -427,7 +426,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2A1A40DAFB1E3B0C0CD24B29 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -494,10 +493,42 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-courses-coursesTests/Pods-courses-coursesTests-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,10 +543,42 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-courses/Pods-courses-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Feather.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Foundation.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Octicons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf",
+				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Zocial.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Feather.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Brands.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FontAwesome5_Solid.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Fontisto.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Foundation.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Ionicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialCommunityIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Octicons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SimpleLineIcons.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Zocial.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
