@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {StyleSheet, Dimensions, View} from 'react-native';
 import Carousel from 'react-native-snap-carousel';
 import {Card, Container, HeaderCard, HeaderBody, HeaderFooter} from './styles';
@@ -6,12 +6,41 @@ import {scrollInterpolator, animatedStyles} from './animation';
 import TextBold from '../TextBold';
 import TextInfo from '../Text/index';
 import Button from '../Buttom/index';
+import {Pagination} from 'react-native-snap-carousel';
 
 const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 const ITEM_HEIGHT = Math.round((ITEM_WIDTH * 3) / 4);
 
 const CarouselComponent = ({data, navigation}) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [entries, setEntries] = useState(0);
+
+  function pagination() {
+    return (
+      <Pagination
+        dotsLength={data.length}
+        activeDotIndex={activeSlide}
+        containerStyle={{backgroundColor: 'transparent', marginTop: 10}}
+        dotStyle={{
+          width: 13,
+          height: 13,
+          borderRadius: 10,
+          marginHorizontal: 8,
+          backgroundColor: '#FF8686',
+        }}
+        inactiveDotStyle={{
+          backgroundColor: 'white',
+          borderColor: '#FF8686',
+          borderWidth: 2,
+          width: 20,
+          height: 20,
+        }}
+        inactiveDotOpacity={0.6}
+        inactiveDotScale={0.6}
+      />
+    );
+  }
   function renderDescription(item) {
     return (
       <>
@@ -141,21 +170,22 @@ const CarouselComponent = ({data, navigation}) => {
           }}
         />
       </View>
-      <Carousel
-        layout="stack"
-        layoutCardOffset={18}
-        data={data}
-        sliderWidth={SLIDER_WIDTH}
-        itemWidth={315}
-        containerCustomStyle={styles.carouselContainer}
-        scrollInterpolator={scrollInterpolator}
-        slideInterpolatedStyle={animatedStyles}
-        useScrollView
-        enableMomentum
-        renderItem={renderItems}
-        activeSlideAlignment="center"
-      />
-      {}
+      <View style={{paddingBottom: 20}}>
+        <Carousel
+          layout="default"
+          data={data}
+          sliderWidth={SLIDER_WIDTH}
+          itemWidth={315}
+          scrollInterpolator={scrollInterpolator}
+          slideInterpolatedStyle={animatedStyles}
+          useScrollView
+          enableMomentum
+          renderItem={renderItems}
+          activeSlideAlignment="center"
+          onSnapToItem={(index) => setActiveSlide(index)}
+        />
+      </View>
+      {pagination()}
     </Container>
   );
 };
@@ -167,7 +197,7 @@ const styles = StyleSheet.create({
     height: ITEM_HEIGHT + 15,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 4,
+    borderWidth: 1,
     borderColor: '#2e5d0c',
     borderRadius: 5,
   },

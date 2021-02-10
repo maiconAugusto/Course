@@ -2,8 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   display: flex;
-  background-color: white;
-  flex: 1;
+  flex-direction: column;
 `;
 
 export const Card = styled.View.attrs({
@@ -19,7 +18,7 @@ export const Card = styled.View.attrs({
   display: flex;
   height: 370px;
   background-color: white;
-  margin: 10px 25px 0px 25px;
+  margin: 10px 25px 20px 25px;
   border-radius: 30px;
 `;
 export const HeaderCard = styled.View`
