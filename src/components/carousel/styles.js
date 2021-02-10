@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const Card = styled.View.attrs({
-  shadowColor: '#CFCFCF',
+  shadowColor: '#707070',
   shadowOffset: {
     width: 0,
     height: 3,
@@ -18,7 +18,8 @@ export const Card = styled.View.attrs({
 })`
   display: flex;
   height: 370px;
-  margin: 4px 25px 0px 25px;
+  background-color: white;
+  margin: 10px 25px 0px 25px;
   border-radius: 30px;
 `;
 export const HeaderCard = styled.View`

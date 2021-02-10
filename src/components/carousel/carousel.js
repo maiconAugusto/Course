@@ -146,7 +146,6 @@ const CarouselComponent = ({data, navigation}) => {
         data={data}
         sliderWidth={SLIDER_WIDTH}
         itemWidth={315}
-        containerCustomStyle={styles.carouselContainer}
         scrollInterpolator={scrollInterpolator}
         slideInterpolatedStyle={animatedStyles}
         useScrollView
@@ -165,7 +164,7 @@ const styles = StyleSheet.create({
     height: ITEM_HEIGHT + 15,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 4,
+    borderWidth: 1,
     borderColor: '#2e5d0c',
     borderRadius: 5,
   },
