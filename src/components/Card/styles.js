@@ -42,9 +42,9 @@ export const CardBody = styled.View`
 export const CardFooter = styled.View`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  height: 35%;
+  height: 30%;
 `;
 export const Chip = styled.View`
   width: 31px;
