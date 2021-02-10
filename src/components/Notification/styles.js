@@ -25,6 +25,6 @@ export const View = styled.View`
 `;
 export const ContainerButtom = styled.View`
   width: 100%;
-  margin-top: 50%;
+  margin-top: 42%;
   padding: 20px;
 `;

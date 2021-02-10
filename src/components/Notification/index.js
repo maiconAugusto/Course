@@ -4,7 +4,7 @@ import {Icon} from 'react-native-elements';
 import Button from '../Buttom/index';
 import TextInfo from '../Text';
 
-const Notification = ({info, message}) => {
+const Notification = ({info, message, onPress}) => {
   return (
     <Container>
       <View>
@@ -46,7 +46,7 @@ const Notification = ({info, message}) => {
             fontSize: 14,
           }}
           mode="contained"
-          onPress={() => {}}
+          onPress={onPress}
         />
       </ContainerButtom>
     </Container>

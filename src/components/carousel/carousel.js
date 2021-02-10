@@ -12,27 +12,28 @@ const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 const ITEM_HEIGHT = Math.round((ITEM_WIDTH * 3) / 4);
 
 const CarouselComponent = ({data, navigation}) => {
-  let carouselItems = [
-    {
-      title: 'Item 1',
-      text: 'Text 1',
-    },
-    {
-      title: 'Item 2',
-      text: 'Text 2',
-    },
-    {
-      title: 'Item 3',
-      text: 'Text 3',
-    },
-  ];
-
+  function renderDescription(item) {
+    return (
+      <>
+        <TextInfo
+          style={{
+            color: '#707070',
+            fontSize: 14,
+            marginLeft: 20,
+            marginTop: 2,
+            fontFamily: 'HelveticaNeue Light',
+          }}
+          data={item}
+        />
+      </>
+    );
+  }
   function renderItems({item, index}) {
     return (
       <Card>
         <HeaderCard>
           <TextBold
-            data="Curso básico de agilidade 1"
+            data={item.name}
             style={{
               color: '#707070',
               fontSize: 24,
@@ -41,36 +42,7 @@ const CarouselComponent = ({data, navigation}) => {
           />
         </HeaderCard>
         <HeaderBody>
-          <TextInfo
-            style={{
-              color: '#707070',
-              fontSize: 14,
-              marginLeft: 20,
-              marginTop: 2,
-              fontFamily: 'HelveticaNeue Light',
-            }}
-            data="• Introdução 1"
-          />
-          <TextInfo
-            style={{
-              color: '#707070',
-              fontSize: 14,
-              marginLeft: 20,
-              marginTop: 2,
-              fontFamily: 'HelveticaNeue Light',
-            }}
-            data="• Introdução 1"
-          />
-          <TextInfo
-            style={{
-              color: '#707070',
-              fontSize: 14,
-              marginLeft: 20,
-              marginTop: 2,
-              fontFamily: 'HelveticaNeue Light',
-            }}
-            data="• Introdução 1"
-          />
+          {renderDescription(item.description)}
           <View style={{flexDirection: 'row', marginTop: 22}}>
             <TextBold
               data="Duração:"
@@ -88,7 +60,7 @@ const CarouselComponent = ({data, navigation}) => {
                 marginLeft: 4,
                 fontFamily: 'HelveticaNeue Light',
               }}
-              data="45 Horas"
+              data={item.duration}
             />
           </View>
         </HeaderBody>
@@ -120,7 +92,7 @@ const CarouselComponent = ({data, navigation}) => {
               </View>
               <View>
                 <TextBold
-                  data="799,90"
+                  data={parseFloat(item.price).toFixed(2)}
                   style={{
                     color: '#7BBDF5',
                     fontSize: 30,
@@ -143,7 +115,13 @@ const CarouselComponent = ({data, navigation}) => {
                 fontSize: 14,
               }}
               mode="contained"
-              onPress={() => navigation.navigate('Payment')}
+              onPress={() =>
+                navigation.navigate('Payment', {
+                  id: item.id,
+                  price: item.price,
+                  name: item.name,
+                })
+              }
             />
           </View>
         </HeaderFooter>
@@ -165,7 +143,7 @@ const CarouselComponent = ({data, navigation}) => {
       </View>
       <Carousel
         layout="default"
-        data={carouselItems}
+        data={data}
         sliderWidth={SLIDER_WIDTH}
         itemWidth={315}
         containerCustomStyle={styles.carouselContainer}

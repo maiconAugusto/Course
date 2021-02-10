@@ -8,23 +8,33 @@ import TextInfo from '../../components/Text';
 import {Divider} from 'react-native-elements';
 import Notification from '../../components/Notification';
 
-const Payment = () => {
+const Payment = ({navigation, route}) => {
   const [cardNumber, setCardNumber] = useState('');
   const [nameCard, setNameCard] = useState('');
   const [cardValidate, setValidation] = useState('');
   const [cvv, setCvv] = useState('');
   const [success, setSuccess] = useState(false);
-  const [percent, setPercent] = useState(10);
+  const [percent] = useState(10);
+  const {id: courseId, price: coursePrice, name: courseName} = route.params;
 
   function percentCalculation(value, percentX) {
-    var response = (parseFloat(value) * parseFloat(percentX)) / 100;
-    return parseFloat(response);
+    var response = parseFloat(value).toFixed(2) * (Number(percentX) / 100);
+    return parseFloat(response.toFixed(2));
+  }
+
+  function applyDiscount(value, discount) {
+    const response =
+      parseFloat(value).toFixed(2) - parseFloat(discount).toFixed(2);
+    return response;
   }
 
   return (
     <>
       {success ? (
         <Notification
+          onPress={() =>
+            navigation.reset({index: 0, routes: [{name: 'Initial'}]})
+          }
           info="Sucesso! Compra concluída"
           message="Você receberá um email com os detalhes da sua compra."
         />
@@ -128,7 +138,7 @@ const Payment = () => {
                 fontSize: 14,
                 fontFamily: 'HelveticaNeue Light',
               }}
-              data="Curso de agilidade 2"
+              data={courseName}
             />
             <TextInfo
               style={{
@@ -137,7 +147,7 @@ const Payment = () => {
                 marginTop: 2,
                 fontFamily: 'HelveticaNeue Light',
               }}
-              data="R$ 899,00"
+              data={parseFloat(coursePrice).toFixed(2)}
             />
           </Row>
           <Row
@@ -153,7 +163,7 @@ const Payment = () => {
                 fontSize: 14,
                 fontFamily: 'HelveticaNeue Light',
               }}
-              data="Desconto 10%"
+              data={`Desconto ${percent}%`}
             />
             <TextInfo
               style={{
@@ -162,7 +172,7 @@ const Payment = () => {
                 marginTop: 2,
                 fontFamily: 'HelveticaNeue Light',
               }}
-              data="- R$ 89,00"
+              data={percentCalculation(coursePrice, percent)}
             />
           </Row>
           <Divider
@@ -184,7 +194,10 @@ const Payment = () => {
               }}
             />
             <TextBold
-              data="R$ 809,10"
+              data={`R$ ${applyDiscount(
+                coursePrice,
+                percentCalculation(coursePrice, percent),
+              )}`}
               style={{
                 color: '#707070',
                 fontSize: 20,
