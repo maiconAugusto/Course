@@ -11,7 +11,7 @@ const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 const ITEM_HEIGHT = Math.round((ITEM_WIDTH * 3) / 4);
 
-const CarouselComponent = () => {
+const CarouselComponent = ({navigation}) => {
   let carouselItems = [
     {
       title: 'Item 1',
@@ -24,14 +24,6 @@ const CarouselComponent = () => {
     {
       title: 'Item 3',
       text: 'Text 3',
-    },
-    {
-      title: 'Item 4',
-      text: 'Text 4',
-    },
-    {
-      title: 'Item 5',
-      text: 'Text 5',
     },
   ];
 
@@ -79,7 +71,7 @@ const CarouselComponent = () => {
             }}
             data="• Introdução 1"
           />
-          <View style={{flexDirection: 'row', marginTop: 18}}>
+          <View style={{flexDirection: 'row', marginTop: 22}}>
             <TextBold
               data="Duração:"
               style={{
@@ -93,7 +85,7 @@ const CarouselComponent = () => {
               style={{
                 color: '#707070',
                 fontSize: 14,
-                margin: 2,
+                marginLeft: 4,
                 fontFamily: 'HelveticaNeue Light',
               }}
               data="45 Horas"
@@ -143,10 +135,14 @@ const CarouselComponent = () => {
               color="#FF8686"
               uppercase={false}
               style={{borderRadius: 8, width: 150, marginBottom: 10}}
-              contentStyle={{height: 40, width: 150}}
-              labelStyle={{color: 'white'}}
+              contentStyle={{height: 40, width: 147}}
+              labelStyle={{
+                color: 'white',
+                fontFamily: 'HelveticaNeue Medium',
+                fontSize: 14,
+              }}
               mode="contained"
-              onPress={() => console.log('Pressed')}>
+              onPress={() => navigation.navigate('Payment')}>
               Comprar
             </Button>
           </View>

@@ -17,7 +17,7 @@ export const Card = styled.View.attrs({
   elevation: 10,
 })`
   display: flex;
-  height: 58%;
+  height: 56%;
   background-color: white;
   margin: 10px 25px 0px 25px;
   border-radius: 30px;
@@ -37,6 +37,6 @@ export const HeaderFooter = styled.View`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 40%;
+  height: 48%;
   width: 100%;
 `;

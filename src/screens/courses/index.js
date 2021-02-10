@@ -2,10 +2,10 @@ import React from 'react';
 import {Container} from './styles';
 import Carousel from '../../components/carousel/carousel';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <Container>
-      <Carousel />
+      <Carousel navigation={navigation} />
     </Container>
   );
 };
