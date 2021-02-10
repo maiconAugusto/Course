@@ -13,7 +13,7 @@ import {
 } from './styles';
 import TextInfo from '../../components/Text';
 
-const Payment = () => {
+const Payment = ({cardNumber, nameCard ,cardValidate, cvv}) => {
   return (
     <ContainerCard>
       <Card>
@@ -38,6 +38,7 @@ const Payment = () => {
           <View
             style={{
               width: '50%',
+              marginLeft: 20,
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}>
@@ -56,14 +57,14 @@ const Payment = () => {
                   fontSize: 12,
                   fontFamily: 'HelveticaNeue Medium',
                 }}
-                data="MARIA CLARA M."
+                data={nameCard}
               />
             </View>
             <View />
           </View>
           <View
             style={{
-              width: '10%',
+              width: '15%',
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}>
@@ -82,14 +83,14 @@ const Payment = () => {
                   fontSize: 12,
                   fontFamily: 'HelveticaNeue Medium',
                 }}
-                data="12/12"
+                data={cardValidate}
               />
             </View>
             <View />
           </View>
           <View
             style={{
-              width: '10%',
+              width: '15%',
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}>
@@ -100,7 +101,7 @@ const Payment = () => {
                   fontSize: 8,
                   fontFamily: 'HelveticaNeue Light',
                 }}
-                data="Validade"
+                data="CVV"
               />
               <TextInfo
                 style={{
@@ -108,7 +109,7 @@ const Payment = () => {
                   fontSize: 12,
                   fontFamily: 'HelveticaNeue Medium',
                 }}
-                data="12/12"
+                data={cvv}
               />
             </View>
             <View />

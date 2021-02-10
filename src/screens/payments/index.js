@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {KeyboardAvoidingView} from 'react-native';
 import {Container, Row} from './styles';
 import Card from '../../components/Card';
 import Input from '../../components/Input';
@@ -9,12 +10,15 @@ import {Divider} from 'react-native-elements';
 import Notification from '../../components/Notification';
 
 const Payment = ({navigation, route}) => {
+
   const [cardNumber, setCardNumber] = useState('');
   const [nameCard, setNameCard] = useState('');
   const [cardValidate, setValidation] = useState('');
   const [cvv, setCvv] = useState('');
   const [success, setSuccess] = useState(false);
   const [percent] = useState(10);
+  const keyboardVerticalOffset = Platform.OS === 'ios' ? 40 : 20
+
   const {id: courseId, price: coursePrice, name: courseName} = route.params;
 
   function percentCalculation(value, percentX) {
@@ -40,13 +44,13 @@ const Payment = ({navigation, route}) => {
         />
       ) : (
         <Container>
-          <Card />
+          <KeyboardAvoidingView behavior='position' keyboardVerticalOffset={keyboardVerticalOffset}>
+          <Card cardNumber={cardNumber} nameCard={nameCard} cardValidate={cardValidate} cvv={cvv} />
           <Input
             style={{
               marginLeft: 20,
               marginRight: 20,
               marginTop: 18,
-              height: 45,
               backgroundColor: 'white',
             }}
             label="Número do cartão de crédito"
@@ -56,6 +60,7 @@ const Payment = ({navigation, route}) => {
             returnKeyType="done"
             type="custom"
             keyboardType="numeric"
+            autoFocus
             options={{
               mask: '9999 9999 9999 9999 9999 ',
             }}
@@ -65,23 +70,22 @@ const Payment = ({navigation, route}) => {
               marginLeft: 20,
               marginRight: 20,
               marginTop: 12,
-              height: 45,
               backgroundColor: 'white',
             }}
             label="Nome"
             mode="outlined"
             value={nameCard}
+            maxLength={35}
             setValue={setNameCard}
             returnKeyType="done"
             keyboardType="default"
-            numberOfLines={40}
+            numberOfLines={30}
             autoCapitalize="characters"
           />
           <Row>
             <Input
               style={{
                 marginTop: 12,
-                height: 45,
                 width: '48%',
                 marginRight: 10,
                 backgroundColor: 'white',
@@ -100,7 +104,6 @@ const Payment = ({navigation, route}) => {
             <Input
               style={{
                 marginTop: 12,
-                height: 45,
                 width: '40%',
                 backgroundColor: 'white',
               }}
@@ -226,6 +229,7 @@ const Payment = ({navigation, route}) => {
               }}
             />
           </Row>
+          </KeyboardAvoidingView>
         </Container>
       )}
     </>
