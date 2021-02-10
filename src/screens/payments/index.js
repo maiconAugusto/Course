@@ -17,7 +17,7 @@ const Payment = ({navigation, route}) => {
   const [cvv, setCvv] = useState('');
   const [success, setSuccess] = useState(false);
   const [percent] = useState(10);
-  const keyboardVerticalOffset = Platform.OS === 'ios' ? 40 : 20
+  const keyboardVerticalOffset = Platform.OS === 'ios' ? 40 : -80
 
   const {id: courseId, price: coursePrice, name: courseName} = route.params;
 
@@ -43,7 +43,7 @@ const Payment = ({navigation, route}) => {
           message="Você receberá um email com os detalhes da sua compra."
         />
       ) : (
-        <Container>
+        <Container keyboardShouldPersistTaps='handled'>
           <KeyboardAvoidingView behavior='position' keyboardVerticalOffset={keyboardVerticalOffset}>
           <Card cardNumber={cardNumber} nameCard={nameCard} cardValidate={cardValidate} cvv={cvv} />
           <Input
@@ -59,7 +59,7 @@ const Payment = ({navigation, route}) => {
             value={cardNumber}
             returnKeyType="done"
             type="custom"
-            keyboardType="numeric"
+            keyboardType="default"
             autoFocus
             options={{
               mask: '9999 9999 9999 9999 9999 ',
@@ -181,13 +181,13 @@ const Payment = ({navigation, route}) => {
           <Divider
             style={{
               backgroundColor: '#CCCCCC',
-              marginTop: 25,
+              marginTop: 20,
               marginBottom: 20,
               marginLeft: 20,
               marginRight: 20,
             }}
           />
-          <Row style={{justifyContent: 'space-between', margin: 20}}>
+          <Row style={{justifyContent: 'space-between', marginLeft: 20, marginRight: 20}}>
             <TextBold
               data="Total:"
               style={{
