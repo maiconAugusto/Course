@@ -5,7 +5,7 @@ import {Card, Container, HeaderCard, HeaderBody, HeaderFooter} from './styles';
 import {scrollInterpolator, animatedStyles} from './animation';
 import TextBold from '../TextBold';
 import TextInfo from '../Text/index';
-import {Button} from 'react-native-paper';
+import Button from '../Buttom/index';
 
 const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
@@ -133,6 +133,7 @@ const CarouselComponent = ({navigation}) => {
           <View style={{alignItems: 'center'}}>
             <Button
               color="#FF8686"
+              data="Comprar"
               uppercase={false}
               style={{borderRadius: 8, width: 150, marginBottom: 10}}
               contentStyle={{height: 40, width: 147}}
@@ -142,9 +143,8 @@ const CarouselComponent = ({navigation}) => {
                 fontSize: 14,
               }}
               mode="contained"
-              onPress={() => navigation.navigate('Payment')}>
-              Comprar
-            </Button>
+              onPress={() => navigation.navigate('Payment')}
+            />
           </View>
         </HeaderFooter>
       </Card>

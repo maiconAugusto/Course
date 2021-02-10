@@ -1,0 +1,27 @@
+import React from 'react';
+import {Button} from 'react-native-paper';
+
+const ButtonComponent = ({
+  data,
+  style,
+  labelStyle,
+  uppercase,
+  contentStyle,
+  mode,
+  color,
+  onPress,
+}) => {
+  return (
+    <Button
+      color={color}
+      style={style}
+      uppercase={uppercase}
+      contentStyle={contentStyle}
+      mode={mode}
+      onPress={onPress}
+      labelStyle={labelStyle}>
+      {data}
+    </Button>
+  );
+};
+export default ButtonComponent;
