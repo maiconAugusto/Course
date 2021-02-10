@@ -4,6 +4,7 @@ export const Container = styled.View`
   display: flex;
   flex: 1;
   flex-direction: column;
+  background-color: white;
 `;
 export const Row = styled.View`
   display: flex;

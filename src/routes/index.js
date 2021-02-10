@@ -16,7 +16,6 @@ const headerStyle = {
       type="ionicon"
       name="cart-outline"
       color="white"
-      onPress={() => alert('ola')}
     />
   ),
   headerBackTitleVisible: false,
