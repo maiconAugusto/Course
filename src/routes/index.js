@@ -1,4 +1,5 @@
 import React from 'react';
+import {Platform} from 'react-native';
 import {Icon} from 'react-native-elements';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -21,7 +22,7 @@ const headerStyle = {
   headerBackTitleVisible: false,
   headerTintColor: 'white',
   headerStyle: {
-    height: 100,
+    height: Platform.OS === 'ios' ? 100 : 60,
     elevation: 0,
     shadowOpacity: 0,
     backgroundColor: '#FF8686',

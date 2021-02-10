@@ -142,7 +142,8 @@ const CarouselComponent = ({data, navigation}) => {
         />
       </View>
       <Carousel
-        layout="default"
+        layout="stack"
+        layoutCardOffset={18}
         data={data}
         sliderWidth={SLIDER_WIDTH}
         itemWidth={315}
@@ -154,6 +155,7 @@ const CarouselComponent = ({data, navigation}) => {
         renderItem={renderItems}
         activeSlideAlignment="center"
       />
+      {}
     </Container>
   );
 };
