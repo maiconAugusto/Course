@@ -1,12 +1,21 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   display: flex;
   background-color: white;
   flex: 1;
 `;
 
-export const Card = styled.View`
+export const Card = styled.View.attrs({
+  shadowColor: '#CFCFCF',
+  shadowOffset: {
+    width: 0,
+    height: 3,
+  },
+  shadowOpacity: 0.28,
+  shadowRadius: 5.65,
+  elevation: 10,
+})`
   display: flex;
   height: 370px;
   margin: 4px 25px 0px 25px;
