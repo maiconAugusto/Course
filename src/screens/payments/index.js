@@ -14,6 +14,13 @@ const Payment = () => {
   const [cardValidate, setValidation] = useState('');
   const [cvv, setCvv] = useState('');
   const [success, setSuccess] = useState(false);
+  const [percent, setPercent] = useState(10);
+
+  function percentCalculation(value, percentX) {
+    var response = (parseFloat(value) * parseFloat(percentX)) / 100;
+    return parseFloat(response);
+  }
+
   return (
     <>
       {success ? (
