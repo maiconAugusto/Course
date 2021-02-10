@@ -11,7 +11,7 @@ const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 const ITEM_HEIGHT = Math.round((ITEM_WIDTH * 3) / 4);
 
-const CarouselComponent = ({navigation}) => {
+const CarouselComponent = ({data, navigation}) => {
   let carouselItems = [
     {
       title: 'Item 1',
