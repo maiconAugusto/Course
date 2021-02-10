@@ -21,7 +21,7 @@ const headerStyle = {
   headerBackTitleVisible: false,
   headerTintColor: 'white',
   headerStyle: {
-    height: 100,
+    height: 60,
     elevation: 0,
     shadowOpacity: 0,
     backgroundColor: '#FF8686',

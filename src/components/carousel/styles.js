@@ -1,25 +1,15 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   display: flex;
   background-color: white;
   flex: 1;
 `;
 
-export const Card = styled.View.attrs({
-  shadowColor: '#707070',
-  shadowOffset: {
-    width: 0,
-    height: 3,
-  },
-  shadowOpacity: 0.28,
-  shadowRadius: 5.65,
-  elevation: 10,
-})`
+export const Card = styled.View`
   display: flex;
-  height: 56%;
-  background-color: white;
-  margin: 10px 25px 0px 25px;
+  height: 370px;
+  margin: 4px 25px 0px 25px;
   border-radius: 30px;
 `;
 export const HeaderCard = styled.View`
