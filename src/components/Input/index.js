@@ -15,7 +15,6 @@ const Input = ({
   autoCapitalize,
   options,
   autoFocus,
-  blurOnSubmit,
   error,
 }) => {
   return (
@@ -25,7 +24,6 @@ const Input = ({
           autoFocus={autoFocus === undefined ? false : autoFocus}
           mode={mode}
           selectionColor="#707070"
-          blurOnSubmit={blurOnSubmit === undefined ? false : blurOnSubmit}
           label={label}
           error={!error}
           theme={{
@@ -54,7 +52,6 @@ const Input = ({
           selectionColor="#707070"
           label={label}
           error={!error}
-          blurOnSubmit={blurOnSubmit === undefined ? false : blurOnSubmit}
           style={{...style}}
           value={value}
           onChangeText={(text) => setValue(text)}
