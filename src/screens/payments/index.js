@@ -16,7 +16,7 @@ const Payment = ({navigation, route}) => {
   const [percent] = useState(10);
   const errorMessage = 'Campo obrigatório';
 
-  const keyboardVerticalOffset = Platform.OS === 'ios' ? 40 : -80;
+  const keyboardVerticalOffset = Platform.OS === 'ios' ? 0 : -80;
 
   const {id: courseId, price: coursePrice, name: courseName} = route.params;
 
@@ -89,7 +89,7 @@ const Payment = ({navigation, route}) => {
                     returnKeyType="done"
                     error={isValid}
                     type="custom"
-                    keyboardType="default"
+                    keyboardType="numeric"
                     autoFocus
                     options={{
                       mask: '9999 9999 9999 9999 9999 ',
@@ -99,10 +99,10 @@ const Payment = ({navigation, route}) => {
                     style={{
                       marginLeft: 20,
                       marginRight: 20,
-                      marginTop: 12,
+                      marginTop: 10,
                       backgroundColor: 'white',
                     }}
-                    label="Nome do cartão"
+                    label="Nome"
                     mode="outlined"
                     value={values.nameCard}
                     maxLength={35}
@@ -116,7 +116,7 @@ const Payment = ({navigation, route}) => {
                   <Row>
                     <Input
                       style={{
-                        marginTop: 12,
+                        marginTop: 10,
                         width: '48%',
                         marginRight: 10,
                         backgroundColor: 'white',
@@ -135,7 +135,7 @@ const Payment = ({navigation, route}) => {
                     />
                     <Input
                       style={{
-                        marginTop: 12,
+                        marginTop: 10,
                         width: '40%',
                         backgroundColor: 'white',
                       }}
@@ -156,8 +156,8 @@ const Payment = ({navigation, route}) => {
                   <Divider
                     style={{
                       backgroundColor: '#CCCCCC',
-                      marginTop: 25,
-                      marginBottom: 20,
+                      marginTop: 26,
+                      marginBottom: 14,
                       marginLeft: 20,
                       marginRight: 20,
                     }}
@@ -215,7 +215,7 @@ const Payment = ({navigation, route}) => {
                   <Divider
                     style={{
                       backgroundColor: '#CCCCCC',
-                      marginTop: 20,
+                      marginTop: 15,
                       marginBottom: 20,
                       marginLeft: 20,
                       marginRight: 20,

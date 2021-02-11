@@ -27,7 +27,11 @@ const Input = ({
           label={label}
           error={!error}
           theme={{
-            colors: {primary: '#707070', underlineColor: 'red', error: 'red'},
+            colors: {
+              primary: '#707070',
+              underlineColor: 'red',
+              error: '#FF8686',
+            },
           }}
           style={{...style}}
           value={value}
@@ -46,7 +50,7 @@ const Input = ({
             colors: {
               primary: '#707070',
               underlineColor: 'transparent',
-              error: 'red',
+              error: '#FF8686',
             },
           }}
           selectionColor="#707070"

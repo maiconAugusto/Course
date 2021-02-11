@@ -1,5 +1,7 @@
 import React from 'react';
+import {Platform} from 'react-native';
 import {Icon} from 'react-native-elements';
+import isIphoneX from '../config/statusBar';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -21,7 +23,7 @@ const headerStyle = {
   headerBackTitleVisible: false,
   headerTintColor: 'white',
   headerStyle: {
-    height: 60,
+    height: Platform.OS === 'ios' ? isIphoneX() : 60,
     elevation: 0,
     shadowOpacity: 0,
     backgroundColor: '#FF8686',

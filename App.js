@@ -1,5 +1,6 @@
 import React from 'react';
-import {StatusBar} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import GeneralStatusBarColor from './src/components/StatusBarApple/GeneralStatusBarColor';
 import {Provider} from 'react-redux';
 import store from './src/store/index';
 import Routes from './src/routes/index';
@@ -9,7 +10,7 @@ const App = () => {
     <>
       <Provider store={store}>
         <Routes />
-        <StatusBar barStyle="light-content" />
+        <GeneralStatusBarColor barStyle="light-content" />
       </Provider>
     </>
   );

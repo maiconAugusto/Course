@@ -13,7 +13,7 @@ import {
 } from './styles';
 import TextInfo from '../../components/Text';
 
-const Payment = ({cardNumber, nameCard ,cardValidate, cvv}) => {
+const Payment = ({cardNumber, nameCard, cardValidate, cvv}) => {
   return (
     <ContainerCard>
       <Card>

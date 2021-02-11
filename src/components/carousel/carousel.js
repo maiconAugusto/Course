@@ -6,7 +6,7 @@ import {scrollInterpolator, animatedStyles} from './animation';
 import TextBold from '../TextBold';
 import TextInfo from '../Text/index';
 import Button from '../Buttom/index';
-import { Pagination } from 'react-native-snap-carousel';
+import {Pagination} from 'react-native-snap-carousel';
 
 const SLIDER_WIDTH = Dimensions.get('window').width;
 const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
@@ -16,31 +16,31 @@ const CarouselComponent = ({data, navigation}) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [entries, setEntries] = useState(0);
 
-  function pagination () {
+  function pagination() {
     return (
-        <Pagination
-          dotsLength={data.length}
-          activeDotIndex={activeSlide}
-          containerStyle={{ backgroundColor: 'transparent', marginTop: 10 }}
-          dotStyle={{
-              width: 13,
-              height: 13,
-              borderRadius: 10,
-              marginHorizontal: 8,
-              backgroundColor: '#FF8686'
-          }}
-          inactiveDotStyle={{
-            backgroundColor: 'white',
-            borderColor: '#FF8686',
-            borderWidth: 2,
-            width: 20,
-            height: 20,
-          }}
-          inactiveDotOpacity={0.6}
-          inactiveDotScale={0.6}
-        />
+      <Pagination
+        dotsLength={data.length}
+        activeDotIndex={activeSlide}
+        containerStyle={{backgroundColor: 'transparent'}}
+        dotStyle={{
+          width: 13,
+          height: 13,
+          borderRadius: 10,
+          marginHorizontal: 8,
+          backgroundColor: '#FF8686',
+        }}
+        inactiveDotStyle={{
+          backgroundColor: 'white',
+          borderColor: '#FF8686',
+          borderWidth: 2,
+          width: 20,
+          height: 20,
+        }}
+        inactiveDotOpacity={0.6}
+        inactiveDotScale={0.6}
+      />
     );
-}
+  }
   function renderDescription(item) {
     return (
       <>
@@ -170,7 +170,7 @@ const CarouselComponent = ({data, navigation}) => {
           }}
         />
       </View>
-      <View style={{paddingBottom: 20}}>
+      <View>
         <Carousel
           layout="default"
           data={data}
@@ -182,10 +182,10 @@ const CarouselComponent = ({data, navigation}) => {
           enableMomentum
           renderItem={renderItems}
           activeSlideAlignment="center"
-          onSnapToItem={(index) => setActiveSlide(index) }
+          onSnapToItem={(index) => setActiveSlide(index)}
         />
       </View>
-      { pagination() }
+      {pagination()}
     </Container>
   );
 };
