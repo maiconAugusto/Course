@@ -13,6 +13,7 @@ const Home = ({navigation}) => {
   const courses = useSelector((state) => state.course.list);
   const loading = useSelector((state) => state.course.loading);
   const error = useSelector((state) => state.course.error);
+
   function getDataCourse() {
     dispatch(ACTION_COURSE.RESQUEST());
   }
@@ -43,7 +44,7 @@ const Home = ({navigation}) => {
         />
         <Pressable
           onPress={() => getDataCourse()}
-          data="Tentar novamente."
+          data="Tentar novamente"
           style={{
             color: '#707070',
             fontSize: 14,

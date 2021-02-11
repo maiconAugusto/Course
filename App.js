@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView} from 'react-native';
+import {StatusBar, Platform} from 'react-native';
 import GeneralStatusBarColor from './src/components/StatusBarApple/GeneralStatusBarColor';
 import {Provider} from 'react-redux';
 import store from './src/store/index';
@@ -10,7 +10,11 @@ const App = () => {
     <>
       <Provider store={store}>
         <Routes />
-        <GeneralStatusBarColor barStyle="light-content" />
+        {Platform.OS === 'ios' ? (
+          <GeneralStatusBarColor barStyle="light-content" />
+        ) : (
+          <StatusBar backgroundColor="#FF8686" />
+        )}
       </Provider>
     </>
   );
