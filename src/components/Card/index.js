@@ -31,7 +31,7 @@ const Payment = ({cardNumber, nameCard ,cardValidate, cvv}) => {
               fontSize: 20,
               fontFamily: 'HelveticaNeue Bold',
             }}
-            data="•••• •••• •••• •••• 1234"
+            data={cardNumber === '' ? '•••• •••• •••• ••••' : cardNumber}
           />
         </CardBody>
         <CardFooter>

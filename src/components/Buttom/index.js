@@ -10,15 +10,18 @@ const ButtonComponent = ({
   mode,
   color,
   onPress,
+  disabled,
+  action,
 }) => {
   return (
     <Button
+      disabled={disabled === undefined ? false : disabled}
       color={color}
       style={style}
       uppercase={uppercase}
       contentStyle={contentStyle}
       mode={mode}
-      onPress={onPress}
+      onPress={action === undefined ? onPress : action}
       labelStyle={labelStyle}>
       {data}
     </Button>
