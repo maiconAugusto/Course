@@ -16,6 +16,7 @@ const Input = ({
   options,
   autoFocus,
   blurOnSubmit,
+  error,
 }) => {
   return (
     <>
@@ -24,9 +25,15 @@ const Input = ({
           autoFocus={autoFocus === undefined ? false : autoFocus}
           mode={mode}
           selectionColor="#707070"
-          blurOnSubmit={blurOnSubmit === undefined ? false : blurOnSubmit}
           label={label}
-          theme={{colors: {primary: '#707070', underlineColor: 'transparent'}}}
+          error={!error}
+          theme={{
+            colors: {
+              primary: '#707070',
+              underlineColor: 'red',
+              error: '#FF8686',
+            },
+          }}
           style={{...style}}
           value={value}
           onChangeText={(text) => setValue(text)}
@@ -40,10 +47,16 @@ const Input = ({
       ) : (
         <TextInput
           mode={mode}
-          theme={{colors: {primary: '#707070', underlineColor: 'transparent'}}}
+          theme={{
+            colors: {
+              primary: '#707070',
+              underlineColor: 'transparent',
+              error: '#FF8686',
+            },
+          }}
           selectionColor="#707070"
           label={label}
-          blurOnSubmit={blurOnSubmit === undefined ? false : blurOnSubmit}
+          error={!error}
           style={{...style}}
           value={value}
           onChangeText={(text) => setValue(text)}

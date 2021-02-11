@@ -15,11 +15,11 @@ export const Card = styled.View.attrs({
   shadowRadius: 5.65,
   elevation: 10,
 })`
-  width: 80%;
+  width: 82%;
   display: flex;
   flex-direction: column;
-  height: 174px;
-  margin-top: 30px;
+  height: 184px;
+  margin-top: 20px;
   background-color: #7bbdf5;
   border-radius: 8px;
 `;

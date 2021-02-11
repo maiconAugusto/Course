@@ -22,7 +22,7 @@ const headerStyle = {
   headerBackTitleVisible: false,
   headerTintColor: 'white',
   headerStyle: {
-    height: Platform.OS === 'ios' ? 100 : 60,
+    height: Platform.OS === 'ios' ? 80 : 60,
     elevation: 0,
     shadowOpacity: 0,
     backgroundColor: '#FF8686',

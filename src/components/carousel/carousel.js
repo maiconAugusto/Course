@@ -21,7 +21,7 @@ const CarouselComponent = ({data, navigation}) => {
       <Pagination
         dotsLength={data.length}
         activeDotIndex={activeSlide}
-        containerStyle={{backgroundColor: 'transparent', marginTop: 10}}
+        containerStyle={{backgroundColor: 'transparent'}}
         dotStyle={{
           width: 13,
           height: 13,
@@ -170,7 +170,7 @@ const CarouselComponent = ({data, navigation}) => {
           }}
         />
       </View>
-      <View style={{paddingBottom: 20}}>
+      <View>
         <Carousel
           layout="default"
           data={data}

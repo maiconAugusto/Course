@@ -13,7 +13,7 @@ import {
 } from './styles';
 import TextInfo from '../../components/Text';
 
-const Payment = ({cardNumber, nameCard ,cardValidate, cvv}) => {
+const Payment = ({cardNumber, nameCard, cardValidate, cvv}) => {
   return (
     <ContainerCard>
       <Card>
@@ -31,7 +31,7 @@ const Payment = ({cardNumber, nameCard ,cardValidate, cvv}) => {
               fontSize: 20,
               fontFamily: 'HelveticaNeue Bold',
             }}
-            data="•••• •••• •••• •••• 1234"
+            data={cardNumber === '' ? '•••• •••• •••• ••••' : cardNumber}
           />
         </CardBody>
         <CardFooter>

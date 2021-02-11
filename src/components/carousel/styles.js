@@ -18,7 +18,7 @@ export const Card = styled.View.attrs({
   display: flex;
   height: 370px;
   background-color: white;
-  margin: 10px 25px 20px 25px;
+  margin: 10px 25px 15px 25px;
   border-radius: 30px;
 `;
 export const HeaderCard = styled.View`
