@@ -156,8 +156,8 @@ const Payment = ({navigation, route}) => {
                   <Divider
                     style={{
                       backgroundColor: '#CCCCCC',
-                      marginTop: 20,
-                      marginBottom: 20,
+                      marginTop: 26,
+                      marginBottom: 14,
                       marginLeft: 20,
                       marginRight: 20,
                     }}
