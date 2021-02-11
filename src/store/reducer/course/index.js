@@ -3,7 +3,7 @@ import * as COURSE_TYPE from '../../types/courses/index';
 const INITIAL_STATE = {
   list: [],
   loading: false,
-  error: null,
+  error: false,
 };
 
 export default function (state = INITIAL_STATE, action) {
@@ -11,6 +11,7 @@ export default function (state = INITIAL_STATE, action) {
     case COURSE_TYPE.REQUEST_COURSES: {
       const newState = {...state, action};
       newState.loading = true;
+      newState.error = false;
       return newState;
     }
     case COURSE_TYPE.SUCCESS_REQUEST_COURSES: {
@@ -22,7 +23,7 @@ export default function (state = INITIAL_STATE, action) {
     case COURSE_TYPE.FAILURE_REQUEST_COURSES: {
       const newState = {...state, action};
       newState.loading = false;
-      newState.error = action.payload;
+      newState.error = null;
       return newState;
     }
     default: {
